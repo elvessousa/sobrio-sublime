@@ -1,0 +1,121 @@
+{
+  "name": "Sobrio Color Scheme",
+  "variables": {
+    "green": "hsla(153, 80%, 40%, 1)",
+    "background": "#202020",
+    "text": "#eeeeee",
+    "black": "#111",
+    "light_gray": "#5f5f5f",
+    "lighter_gray": "#afafaf",
+    "gray": "#3a3b3f",
+    "red": "#fd6389",
+    "blue": "#84afd7",
+    "yellow": "#d7af87",
+    "gold": "#d7af87",
+    "cyan": "#78dce8",
+    "light_blue": "#d7d7ff",
+    "white": "#ffffff"
+  },
+  "globals": {
+    "background": "var(background)",
+    "foreground": "var(text)",
+    "caret": "color(var(white) alpha(0.8))",
+    "line_highlight": "var(black)"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "foreground": "var(gray)"
+    },
+    {
+      "name": "String",
+      "scope": "string, punctuation.definition.string.begin, punctuation.definition.string.end",
+      "foreground": "var(blue)",
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "foreground": "var(light_blue)",
+      "font_style": "italic",
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword, keyword.declaration, storage.type.struct, storage.type.trait, storage.type.interface, storage.type.impl",
+      "foreground": "var(red)",
+      "font_style": "italic",
+    },
+    {
+      "name": "Operators",
+      "scope": "keyword.operator",
+      "foreground": "var(red)",
+      "font_style": "normal",
+    },
+    {
+      "name": "Constant",
+      "scope": "constant",
+      "foreground": "var(light_blue)",
+      "font_style": "normal",
+    },
+    {
+      "name": "Entities",
+      "scope": "entity, meta.tag",
+      "foreground": "var(red)",
+      "font_style": "normal",
+    },
+    {
+      "name": "Tags",
+      "scope": "entity.name.tag",
+      "foreground": "var(red)",
+      "font_style": "bold",
+    },
+    {
+      "name": "Function",
+      "scope": "entity.name.function, variable.function, support.function, entity.name",
+      "foreground": "var(white)",
+      "font_style": "bold",
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "foreground": "var(cyan)",
+      "font_style": "italic",
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "foreground": "var(lighter_gray)",
+      "font_style": "italic",
+    },
+    {
+      "name": "Punctuation",
+      "scope": "punctuation",
+      "foreground": "var(light_gray)",
+      "font_style": "normal",
+    }, 
+    {
+      "name": "Types",
+      "scope": "storage.type, variable.other.constant",
+      "foreground": "var(lighter_gray)",
+      "font_style": "normal",
+    },
+    {
+      "name": "Attributes",
+      "scope": "entity.other.attribute-name",
+      "foreground": "var(gold)",
+      "font_style": "italic",
+    },
+    {
+      "name": "Parameter",
+      "scope": "variable.parameter",
+      "foreground": "var(gold)",
+      "font_style": "normal",
+    },
+     {
+      "name": "Support",
+      "scope": "support",
+      "foreground": "var(gold)",
+      "font_style": "normal",
+    },
+  ]
+}
