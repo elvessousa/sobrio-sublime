@@ -25,97 +25,135 @@
   "rules": [
     {
       "name": "Comment",
-      "scope": "comment",
-      "foreground": "var(gray)"
+      "scope": "comment, punctuation.definition.comment, punctuation.definition.string.begin.json, punctuation.definition.string.end.json,keyword.declaration.doctype.html, constant.language.doctype.html",
+      "foreground": "var(gray)",
+      "font_style": "italic"
     },
     {
       "name": "String",
-      "scope": "string, punctuation.definition.string.begin, punctuation.definition.string.end",
+      "scope": "string, punctuation.definition.string.begin, punctuation.definition.string.end, punctuation.separator.path.html",
       "foreground": "var(blue)",
+      "font_style": "normal"
     },
     {
       "name": "Number",
-      "scope": "constant.numeric",
+      "scope": "constant.numeric, punctuation.definition.entity.html, punctuation.terminator.entity.html, keyword.operator.ampersand.sass",
       "foreground": "var(light_blue)",
-      "font_style": "italic",
+      "font_style": "normal"
     },
     {
       "name": "Keyword",
-      "scope": "keyword, keyword.declaration, storage.type.struct, storage.type.trait, storage.type.interface, storage.type.impl",
+      "scope": "keyword, keyword.declaration, storage.type.class, storage.modifier.implements, storage.type.struct, storage.type.function, storage.type.trait, storage.type.interface, storage.type.impl, meta.function-call, support.function.construct, storage.modifier.rust",
       "foreground": "var(red)",
-      "font_style": "italic",
+      "font_style": "italic"
     },
     {
       "name": "Operators",
-      "scope": "keyword.operator",
+      "scope": "keyword.operator, keyword.control.import-export, punctuation.separator.key-value.html, punctuation.definition.variable, punctuation.accessor, punctuation.definition.tag.begin, punctuation.definition.tag.end, punctuation.definition.keyword",
       "foreground": "var(red)",
-      "font_style": "normal",
+      "font_style": "normal"
     },
     {
       "name": "Constant",
       "scope": "constant",
       "foreground": "var(light_blue)",
-      "font_style": "normal",
+      "font_style": "normal"
     },
     {
       "name": "Entities",
       "scope": "entity, meta.tag",
       "foreground": "var(red)",
-      "font_style": "normal",
+      "font_style": "normal"
     },
     {
       "name": "Tags",
       "scope": "entity.name.tag",
       "foreground": "var(red)",
-      "font_style": "bold",
+      "font_style": "bold"
+    },
+     {
+      "name": "JSX Tags",
+      "scope": "entity.name.tag.js",
+      "foreground": "var(gold)",
+      "font_style": "bold"
+    },
+    {
+      "name": "Special text",
+      "scope": "punctuation.definition.tag.begin.js, punctuation.definition.tag.end.js",
+      "foreground": "var(gold)",
+      "font_style": "normal"
     },
     {
       "name": "Function",
       "scope": "entity.name.function, variable.function, support.function, entity.name",
       "foreground": "var(white)",
-      "font_style": "bold",
+      "font_style": "bold"
+    },
+    {
+      "name": "Special Function",
+      "scope": "source.css support.function",
+      "foreground": "var(cyan)",
+      "font_style": "bold"
     },
     {
       "name": "Storage",
-      "scope": "storage",
+      "scope": "storage, storage.type.rust, keyword.declaration.js, entity.other.attribute-name.id.css, storage.type.c",
       "foreground": "var(cyan)",
-      "font_style": "italic",
+      "font_style": "italic"
     },
     {
       "name": "Variable",
-      "scope": "variable",
+      "scope": "variable, meta.mapping.value.json, source.yaml string.unquoted.plain.out.yaml, support.constant.property-value.css, source.json meta.mapping.value.json meta.sequence.json meta.mapping.value.json string.quoted.double.json, source.json meta.mapping.value.json meta.mapping.value.json string.quoted.double.json",
+      "foreground": "var(white)",
+      "font_style": "normal"
+    },
+    {
+      "name": "Other Variable",
+      "scope": "variable.other.sass, variable.language, variable.other.readwrite.module.elixir",
+      "foreground": "var(white)",
+      "font_style": "italic"
+    },
+    {
+      "name": "Member Variable",
+      "scope": "variable.other.member, meta.property.object, meta.mapping.key, meta.binding.destructuring.sequence.js, support.type.property-name.css, variable.other.readwrite.instance.ruby",
       "foreground": "var(lighter_gray)",
-      "font_style": "italic",
+      "font_style": "normal"
     },
     {
       "name": "Punctuation",
-      "scope": "punctuation",
+      "scope": "punctuation, constant.character.escape",
       "foreground": "var(light_gray)",
-      "font_style": "normal",
+      "font_style": "normal"
     }, 
     {
       "name": "Types",
-      "scope": "storage.type, variable.other.constant",
+      "scope": "storage.type, storage.modifier, variable.other.constant, meta.function.return-type, support.type.primitive, entity.other.attribute-name.js, entity.other.pseudo-class.css, entity.other.pseudo-element.css, entity.name.tag.toml, entity.name.type.class.elixir, support.type.rust",
       "foreground": "var(lighter_gray)",
-      "font_style": "normal",
+      "font_style": "italic"
     },
     {
       "name": "Attributes",
       "scope": "entity.other.attribute-name",
       "foreground": "var(gold)",
-      "font_style": "italic",
+      "font_style": "italic"
     },
     {
-      "name": "Parameter",
-      "scope": "variable.parameter",
+      "name": "Parameter and Symbols",
+      "scope": "variable.parameter, source.json string.quoted.double, constant.other.symbol.ruby, constant.other.symbol.elixir",
       "foreground": "var(gold)",
-      "font_style": "normal",
+      "font_style": "normal"
     },
-     {
+    {
+      "name": "Yaml Keys",
+      "scope": "entity.name.tag.yaml",
+      "foreground": "var(gold)",
+      "font_style": "italic"
+    },
+    {
       "name": "Support",
-      "scope": "support",
+      "scope": "support, support.function, entity.other.inherited-class, entity.name.table.toml, punctuation.definition.table.begin.toml, punctuation.definition.table.end.toml, keyword.other.special-method.ruby",
       "foreground": "var(gold)",
-      "font_style": "normal",
-    },
+      "font_style": "bold"
+    }    
   ]
 }
