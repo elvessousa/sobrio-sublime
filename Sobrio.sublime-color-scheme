@@ -17,10 +17,12 @@
     "white": "#ffffff"
   },
   "globals": {
+    "accent": "var(gold)",
     "background": "var(background)",
     "foreground": "var(text)",
     "caret": "color(var(white) alpha(0.8))",
-    "line_highlight": "var(black)"
+    "line_highlight": "var(black)",
+    "selection": "var(black)"
   },
   "rules": [
     {
