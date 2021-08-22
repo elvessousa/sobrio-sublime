@@ -22,7 +22,10 @@
     "foreground": "var(text)",
     "caret": "color(var(white) alpha(0.8))",
     "line_highlight": "var(black)",
-    "selection": "var(black)"
+    "selection": "var(black)",
+    "line_diff_added": "var(green)",
+    "line_diff_modified": "var(gold)",
+    "line_diff_deleted": "var(red)",
   },
   "rules": [
     {
@@ -111,7 +114,7 @@
     },
     {
       "name": "Other Variable",
-      "scope": "variable.other.sass, variable.language, variable.other.readwrite.module.elixir",
+      "scope": "variable.other.sass, variable.language.php, variable.other.readwrite.module.elixir",
       "foreground": "var(white)",
       "font_style": "italic"
     },
@@ -129,7 +132,7 @@
     }, 
     {
       "name": "Types",
-      "scope": "storage.type, storage.modifier, variable.other.constant, meta.function.return-type, support.type.primitive, entity.other.attribute-name.js, entity.other.pseudo-class.css, entity.other.pseudo-element.css, entity.name.tag.toml, entity.name.type.class.elixir, support.type.rust",
+      "scope": "storage.type, storage.modifier, variable.language, variable.other.constant, meta.function.return-type, support.type.primitive, entity.other.attribute-name.js, entity.other.pseudo-class.css, entity.other.pseudo-element.css, entity.name.tag.toml, entity.name.type.class.elixir, support.type.rust",
       "foreground": "var(lighter_gray)",
       "font_style": "italic"
     },
