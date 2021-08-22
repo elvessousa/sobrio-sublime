@@ -1,20 +1,19 @@
 {
-  "name": "Sobrio - Color Scheme",
+  "name": "Sobrio Light - Color Scheme",
   "variables": {
     "green": "hsla(153, 80%, 40%, 1)",
-    "background": "#202020",
-    "text": "#eeeeee",
-    "black": "#111",
+    "background": "#f8f8f8",
+    "text": "#303030",
+    "black": "#eeeeee",
     "light_gray": "#5f5f5f",
-    "lighter_gray": "#afafaf",
-    "gray": "#3a3b3f",
-    "red": "#fd6389",
-    "blue": "#84afd7",
-    "yellow": "#d7af87",
-    "gold": "#d7af87",
-    "cyan": "#78dce8",
-    "light_blue": "#d7d7ff",
-    "white": "#ffffff"
+    "lighter_gray": "#3a3b3f",
+    "gray": "#afafaf",
+    "red": "#dd4c4f",
+    "blue": "#6787af",
+    "gold": "#af875f",
+    "cyan": "#5fafaf",
+    "light_blue": "#9787af",
+    "white": "#000000"
   },
   "globals": {
     "accent": "var(gold)",
